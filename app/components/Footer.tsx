@@ -99,8 +99,8 @@ export default function Footer() {
             <ul className="flex flex-col gap-4 text-zinc-400 text-sm">
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-gold" />
-                <a href="mailto:hello@flareels.com" className="hover:text-gold transition-colors">
-                  hello@flareels.com
+                <a href="mailto:weareflareels@gmail.com" className="hover:text-gold transition-colors">
+                  weareflareels@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -116,7 +116,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="text-gold mt-1" />
-                <span>Film City, Goregaon East, Mumbai, Maharashtra 400065</span>
+                <span>Parvatham Estates, Secunderabad, 500003, Telangana</span>
               </li>
             </ul>
           </div>

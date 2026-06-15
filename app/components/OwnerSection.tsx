@@ -14,16 +14,16 @@ export default function OwnerSection() {
         
         {/* LEFT COLUMN: Owner Portrait + Floating Glass Cards */}
         <div className="lg:col-span-6 flex justify-center items-center relative w-full max-w-md mx-auto lg:max-w-none">
-          <div className="relative w-[280px] h-[360px] sm:w-[320px] sm:h-[420px] md:w-[360px] md:h-[460px] rounded-[32px] border border-gold/20 p-2 bg-zinc-950/50 shadow-2xl">
+          <div className="relative w-[280px] h-[360px] sm:w-[320px] sm:h-[420px] md:w-[360px] md:h-[460px] rounded-[32px] border border-gold/20 p-2  shadow-2xl">
             {/* Owner Image */}
-            <div className="w-full h-full rounded-[24px] overflow-hidden bg-zinc-900 relative">
+            <div className="w-full h-full rounded-[24px] overflow-hidden relative">
               <img
-                src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=600&auto=format&fit=crop"
+                src="/antooju.jpeg"
                 alt="FLA Reels Lead Videographer"
-                className="w-full h-full object-cover grayscale contrast-[1.1] hover:grayscale-0 transition-all duration-700"
+                className="w-full h-full object-cover "
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80" />
+
             </div>
             
             {/* FLOATING GLASS CARDS */}

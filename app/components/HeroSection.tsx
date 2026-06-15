@@ -8,9 +8,9 @@ import SocialLinks from "./SocialLinks";
 
 export default function HeroSection() {
   return (
-    <header className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 pt-6 pb-20 md:py-12 flex flex-col justify-start">
+    <header className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8  pb-16 md:pt-6 md:pb-12 flex flex-col justify-start">
       {/* HEADER BAR */}
-      <div className="w-full flex justify-between items-center py-6 mb-12 md:mb-16">
+      <div className="w-full flex justify-between items-center py-4 mb-8 md:mb-10">
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -19,7 +19,11 @@ export default function HeroSection() {
         >
           {/* Logo design */}
           <div className="font-serif text-2xl md:text-3xl font-black tracking-widest text-white flex items-center">
-            FLA <span className="font-sans text-gold font-bold ml-1.5 border-l-2 border-gold pl-2 text-xl tracking-normal">REELS</span>
+            <img
+              src="/logo.webp"
+              alt="FLA Reels"
+              className="w-60 h-30 "
+            />
           </div>
         </motion.div>
 
