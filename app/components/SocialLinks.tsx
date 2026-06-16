@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Globe, ArrowRight } from "lucide-react";
+import { Globe, ArrowRight, MessageCircle, Folder } from "lucide-react";
 import { Whatsapp, Instagram, Youtube, Facebook } from "./BrandIcons";
 
 export default function SocialLinks() {
@@ -46,6 +46,22 @@ export default function SocialLinks() {
       url: "https://www.flareels.com/",
       color: "hover:text-gold",
       glowColor: "rgba(245, 199, 107, 0.2)",
+    },
+    {
+      name: "Threads",
+      label: "Short updates & Reels",
+      icon: MessageCircle,
+      url: "https://www.threads.com/@weareflareels",
+      color: "hover:text-pink-400",
+      glowColor: "rgba(225, 48, 108, 0.08)",
+    },
+    {
+      name: "Drive",
+      label: "Shared Assets & Media",
+      icon: Folder,
+      url: "https://drive.google.com/drive/folders/1OueiesBq7puxNElqEgpj8Nr7CDG1zAGj?usp=share_link",
+      color: "hover:text-sky-400",
+      glowColor: "rgba(14, 165, 233, 0.08)",
     },
   ];
 
