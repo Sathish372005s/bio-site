@@ -3,11 +3,8 @@
 import React from "react";
 import BackgroundWrapper from "./components/BackgroundWrapper";
 import HeroSection from "./components/HeroSection";
-import SocialLinks from "./components/SocialLinks";
 import QuoteSection from "./components/QuoteSection";
 import OwnerSection from "./components/OwnerSection";
-import WhyChooseUs from "./components/WhyChooseUs";
-import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import ReelShowcase from "./components/ReelShowcase";
 
@@ -18,7 +15,7 @@ export default function Home() {
       <HeroSection />
 
       {/* 2. Connect & Philosophy (Social Links + Rotating Quotes) */}
-      <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 sm:py-4 md:px-8 py-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+      <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-10 md:py-14 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
         <div className="lg:col-span-6 w-full">
           <ReelShowcase />
         </div>
@@ -50,4 +47,3 @@ export default function Home() {
     </BackgroundWrapper>
   );
 }
-

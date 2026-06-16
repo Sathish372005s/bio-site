@@ -11,7 +11,7 @@ interface BackgroundWrapperProps {
 
 export default function BackgroundWrapper({ children }: BackgroundWrapperProps) {
   return (
-    <div className="relative min-h-screen bg-[#050505] text-[#f3f4f6] overflow-x-hidden selection:bg-gold selection:text-black">
+    <div className="scroll-smooth-layer relative min-h-screen bg-[#050505] text-[#f3f4f6] overflow-x-clip selection:bg-gold selection:text-black">
       {/* Subtle Cinematic Grain/Noise Texture Overlay */}
       <div className="absolute inset-0 bg-noise pointer-events-none -z-10" />
       

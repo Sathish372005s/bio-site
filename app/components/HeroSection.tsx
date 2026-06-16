@@ -3,26 +3,25 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Zap, ArrowRight, Play } from "lucide-react";
-import ReelShowcase from "./ReelShowcase";
 import SocialLinks from "./SocialLinks";
 
 export default function HeroSection() {
   return (
-    <header className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8  pb-16 md:pt-6 md:pb-12 flex flex-col justify-start">
+    <header className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 pb-14 md:pt-6 md:pb-12 flex flex-col justify-start">
       {/* HEADER BAR */}
-      <div className="w-full flex justify-between items-center py-4 mb-8 md:mb-10">
+      <div className="w-full flex items-center justify-between gap-3 py-3 sm:py-4 mb-6 md:mb-10">
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
-          className="flex items-center gap-2"
+          className="min-w-0 flex items-center"
         >
           {/* Logo design */}
-          <div className="font-serif text-2xl md:text-3xl font-black tracking-widest text-white flex items-center">
+          <div className="flex min-w-0 items-center">
             <img
               src="/logo.webp"
               alt="FLA Reels"
-              className="w-60 h-30 "
+              className="h-auto w-[128px] max-w-[42vw] sm:w-[170px] md:w-[220px]"
             />
           </div>
         </motion.div>
@@ -31,12 +30,13 @@ export default function HeroSection() {
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
+          className="shrink-0"
         >
           <a 
             href="https://www.flareels.com/contact"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative group overflow-hidden px-5 py-2.5 rounded-full bg-gradient-to-r from-gold to-amber-500 text-black font-semibold text-sm hover:shadow-[0_0_15px_#f5c76b] transition-all duration-300 transform hover:scale-[1.03]"
+            className="relative group inline-flex items-center justify-center overflow-hidden whitespace-nowrap px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-gradient-to-r from-gold to-amber-500 text-black font-semibold text-xs sm:text-sm hover:shadow-[0_0_15px_#f5c76b] transition-all duration-300 transform hover:scale-[1.03]"
           >
             Book Now
           </a>
@@ -119,4 +119,3 @@ export default function HeroSection() {
     </header>
   );
 }
-

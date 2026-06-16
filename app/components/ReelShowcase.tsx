@@ -7,7 +7,7 @@ export default function ReelShowcase() {
   return (
     <div className="relative flex justify-center items-center w-full min-h-[450px] md:min-h-[600px] select-none">
       {/* Background Glow Ring around the Phone */}
-      <div className="absolute w-[280px] h-[480px] md:w-[320px] md:h-[580px] rounded-[48px] bg-gradient-to-r from-gold/20 via-amber-500/10 to-gold/30 blur-3xl opacity-60 -z-10 animate-pulse-glow" />
+      <div className="absolute w-[260px] h-[440px] md:w-[300px] md:h-[540px] rounded-[48px] bg-gradient-to-r from-gold/15 via-amber-500/10 to-gold/20 blur-2xl opacity-45 -z-10" />
 
       {/* PHONE MOCKUP */}
       <motion.div 
@@ -50,4 +50,3 @@ export default function ReelShowcase() {
     </div>
   );
 }
-

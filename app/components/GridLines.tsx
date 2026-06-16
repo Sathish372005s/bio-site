@@ -22,8 +22,9 @@ export default function GridLines() {
               style={{
                 animationDelay: line.delay,
                 animationDuration: line.duration,
+                willChange: "transform, opacity",
               }}
-              className="absolute left-1/2 -translate-x-1/2 w-[2px] h-[250px] bg-gradient-to-b from-transparent via-gold to-transparent shadow-[0_0_15px_#f5c76b] animate-laser"
+              className="absolute left-1/2 top-0 w-[2px] h-[250px] bg-gradient-to-b from-transparent via-gold to-transparent shadow-[0_0_15px_#f5c76b] animate-laser"
             />
           </div>
         ))}
